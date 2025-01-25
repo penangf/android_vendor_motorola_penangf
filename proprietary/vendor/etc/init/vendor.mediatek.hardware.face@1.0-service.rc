@@ -1,0 +1,13 @@
+service vendor.face-hal-1-0 /vendor/bin/hw/vendor.mediatek.hardware.face@1.0-service
+    # "class hal" causes a race condition on some devices due to files created
+    # in /data. As a workaround, postpone startup until later in boot once
+    # /data is mounted.
+    class late_start
+    user system
+    group system
+    writepid /dev/cpuset/foreground/tasks
+    capabilities SYS_NICE
+    rlimit rtprio 10 10
+
+on post-fs-data
+    mkdir /data/vendor/facelock 0744 system system

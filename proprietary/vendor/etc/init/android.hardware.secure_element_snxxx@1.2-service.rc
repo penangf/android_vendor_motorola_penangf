@@ -1,0 +1,7 @@
+service vendor.secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element_snxxx@1.2-service
+    class hal
+    user secure_element
+    group secure_element
+    disabled
+on property:ro.boot.product.vendor.sku=SKUA
+    start vendor.secure_element_hal_service

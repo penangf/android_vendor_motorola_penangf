@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<virtualSpnOverridesByEfGid1 version="1">
+<virtualSpnOverride mccmncgid1="2343040" name="Virgin"/>
+<!-- Penang code for EKPENANG4G-937 by yangjun at 2024/02/05 start -->
+<virtualSpnOverride mccmncgid1="234100A" name="Tesco UK"/>
+<virtualSpnOverride mccmncgid1="234100AFFFFFF" name="Tesco UK"/>
+<!-- Penang code for EKPENANG4G-937 by yangjun at 2024/02/05 end -->
+</virtualSpnOverridesByEfGid1>
