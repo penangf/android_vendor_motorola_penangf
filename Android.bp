@@ -5,6 +5,32 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+    name: "libfmjni",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libfmjni.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmedia",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
 android_app_import {
 	name: "ImsService",
 	owner: "motorola",
@@ -15,6 +41,54 @@ android_app_import {
 	},
 	privileged: true,
 	system_ext_specific: true,
+}
+
+dex_import {
+    name: "mediatek-common",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/mediatek-common.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-framework",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/mediatek-framework.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-ims-base",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/mediatek-ims-base.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-ims-extension-plugin",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/mediatek-ims-extension-plugin.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telephony-base",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/mediatek-telephony-base.jar",
+    ],
+}
+
+dex_import {
+    name: "mediatek-telephony-common",
+    owner: "motorola",
+    jars: [
+        "proprietary/system/framework/mediatek-telephony-common.jar",
+    ],
 }
 
 prebuilt_etc_xml {
