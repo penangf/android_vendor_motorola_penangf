@@ -1,0 +1,6 @@
+com.motorola.motocit.battery.BatteryInfo
+com.motorola.motocit.audio.AudioLoopBack
+com.motorola.motocit.fingerprint.FingerPrint
+com.motorola.motocit.hostmode.Hostmode
+com.motorola.motocit.vibrator.VibratorTest
+com.motorola.motocit.display.testPatterns.WhiteWithBlackBorder
