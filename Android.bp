@@ -5,6 +5,32 @@
 soong_namespace {
 }
 
+cc_prebuilt_library_shared {
+    name: "libfmjni",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/lib64/libfmjni.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libmedia",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
 android_app_import {
 	name: "ImsService",
 	owner: "motorola",
