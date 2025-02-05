@@ -127,7 +127,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/penangf/proprietary/vendor/bin/hw/vendor.trustonic.tee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.trustonic.tee@1.1-service \
     vendor/motorola/penangf/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
     vendor/motorola/penangf/proprietary/vendor/bin/ipsec_mon:$(TARGET_COPY_OUT_VENDOR)/bin/ipsec_mon \
-    vendor/motorola/penangf/proprietary/vendor/bin/iwpriv:$(TARGET_COPY_OUT_VENDOR)/bin/iwpriv \
     vendor/motorola/penangf/proprietary/vendor/bin/iwpriv_moto:$(TARGET_COPY_OUT_VENDOR)/bin/iwpriv_moto \
     vendor/motorola/penangf/proprietary/vendor/bin/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/jpegtool \
     vendor/motorola/penangf/proprietary/vendor/bin/lbs_hidl_service:$(TARGET_COPY_OUT_VENDOR)/bin/lbs_hidl_service \
