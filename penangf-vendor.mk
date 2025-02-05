@@ -5,7 +5,11 @@
 PRODUCT_SOONG_NAMESPACES += \
     vendor/motorola/penangf
 
+
 PRODUCT_COPY_FILES += \
+    vendor/motorola/penangf/proprietary/recovery/firmware/ICNL9916.bin:$(TARGET_COPY_OUT_RECOVERY)/firmware/ICNL9916.bin \
+    vendor/motorola/penangf/proprietary/recovery/firmware/ILITEK_FW_TM.bin:$(TARGET_COPY_OUT_RECOVERY)/firmware/ILITEK_FW_TM.bin \
+    vendor/motorola/penangf/proprietary/recovery/firmware/ILITEK_FW_TXD.bin:$(TARGET_COPY_OUT_RECOVERY)/firmware/ILITEK_FW_TXD.bin \
     vendor/motorola/penangf/proprietary/system_ext/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/vtservice \
     vendor/motorola/penangf/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/motorola/penangf/proprietary/system_ext/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcomutils.so \
